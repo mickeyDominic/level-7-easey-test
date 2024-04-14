@@ -28,7 +28,6 @@ Route::get('/list-users', [AppController::class, 'listUsers'])
 
 Route::get('/edit-user/{userId}', [AppController::class, 'viewUser'])
     ->name('edit-user/{userId}');
-
 Route::post('/edit-user', [AppController::class, 'editUser'])
     ->name('edit-user');
 
