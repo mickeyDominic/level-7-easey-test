@@ -77,7 +77,6 @@
                                     <label for="adminYes">Yes</label>
                                 </div>
                             </div>
-                            <input type="hidden" name="addUser" value="1">
                             <div class="mb-3 float-end">
                                 <input type="submit" class="btn btn-primary" name="addUserButton" value="Add User">
                             </div>
