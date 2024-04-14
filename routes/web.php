@@ -23,4 +23,7 @@ Route::get('/add-user', [AppController::class, 'viewAddPage'])
 Route::post('/add-user', [AppController::class, 'addRecord'])
     ->name('add-user');
 
+Route::get('/list-users', [AppController::class, 'listUsers'])
+    ->name('list-users');
+
 require __DIR__.'/auth.php';

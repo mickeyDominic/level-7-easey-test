@@ -34,4 +34,9 @@ class AppController extends Controller
 
         return json_encode($result);
     }
+
+    public function listUsers()
+    {
+        return view('app.list', ['users' => AppUser::all()]);
+    }
 }
