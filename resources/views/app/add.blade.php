@@ -34,7 +34,7 @@
                             <div class="mb-3">
                                 <label for="date_of_birth" class="form-label">Date Of Birth</label>
                                 <input type="date" class="form-control" id="date_of_birth" name="date_of_birth" required
-                                       data-parsley-error-message="Select user date of birth" max="{{ date("Y-m-d") }}"
+                                       data-parsley-error-message="Select user's date of birth" max="{{ date("Y-m-d") }}"
                                 >
                             </div>
                             <div class="mb-3">
