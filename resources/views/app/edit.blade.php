@@ -10,7 +10,6 @@
             <div class="card">
                 <div class="card-body">
                     <div id="edit-user-result" class="row text-light"></div>
-                    <div id="edit-user-result" class="row text-light"></div>
                     <h4 class="card-title">
                         Records
                     </h4>
