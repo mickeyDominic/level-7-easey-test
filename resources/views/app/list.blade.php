@@ -37,8 +37,8 @@
                                 <td> {{ $user->gender }} </td>
                                 <td> {{ $user->admin ? "Yes" : "No" }} </td>
                                 <td>
-                                    <a class="btn btn-info" href="/edit-user/{{ $user->UserId }}">Edit</a>
-                                    <a class="btn btn-danger" href="/delete-user/{{ $user->UserId }}">Delete</a>
+                                    <a class="btn btn-info" href="/edit-user/{{ $user->id }}">Edit</a>
+                                    <a class="btn btn-danger" href="/delete-user/{{ $user->id }}">Delete</a>
                                 </td>
                             </tr>
                                 <?php
