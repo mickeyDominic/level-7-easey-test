@@ -31,4 +31,9 @@ Route::get('/edit-user/{userId}', [AppController::class, 'viewUser'])
 Route::post('/edit-user', [AppController::class, 'editUser'])
     ->name('edit-user');
 
+Route::get('/delete-user/{userId}', [AppController::class, 'deleteUser'])
+    ->name('delete-user/{userId}');
+Route::post('/delete-user', [AppController::class, 'deleteThisUser'])
+    ->name('delete-user');
+
 require __DIR__.'/auth.php';

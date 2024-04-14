@@ -64,4 +64,23 @@ class AppController extends Controller
 
         return json_encode($result);
     }
+
+    public function deleteUser($userId)
+    {
+        return view('app.delete', ['user' => AppUser::find($userId)]);
+    }
+
+    public function deleteThisUser(Request $request)
+    {
+        if (AppUser::find($request->post('user_id'))->delete()) {
+            $error = "false";
+            $errorMessage = "User deleted successfully";
+        } else {
+            $error = "true";
+            $errorMessage = "An error occurred deleting User";
+        }
+        $result = ["error" => $error, "message" => $errorMessage];
+
+        return json_encode($result);
+    }
 }
